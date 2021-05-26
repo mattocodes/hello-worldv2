@@ -22,6 +22,14 @@ jobs:
           name: Output world
           command: |
             echo World!
+  print_env_var:
+    docker:
+      - image: circleci/node:13.8.0
+    steps:
+      - run:
+          name: Print My Environment Variable
+          command: |
+            echo $MYENV
     
 workflows:
   # Name the workflow "welcome"
@@ -32,3 +40,5 @@ workflows:
       - print_hello
       - print_world: 
           requires: [print_hello]
+      - print_env_var:
+          requires: [print_hello, print_world]

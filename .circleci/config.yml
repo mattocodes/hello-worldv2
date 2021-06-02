@@ -54,7 +54,9 @@ jobs:
       - run:
           name: Print Output File
           command: |
-            cat output.txt
+            pwd
+            ls
+            cat ~/output.txt
     
 workflows:
   # Name the workflow "welcome"

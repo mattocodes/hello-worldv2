@@ -42,7 +42,7 @@ jobs:
       - persist_to_workspace:
           root: /tmp/workspace
           paths:
-            - myfile/output.txt
+            - output.txt
   
   print_output_file:
     docker:

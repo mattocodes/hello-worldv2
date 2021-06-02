@@ -58,7 +58,7 @@ jobs:
             ls -la
             ls ~
             ls /home/circleci
-            cat ~/output.txt
+            cat ./output.txt
     
 workflows:
   # Name the workflow "welcome"

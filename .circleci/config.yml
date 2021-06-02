@@ -55,7 +55,9 @@ jobs:
           name: Print Output File
           command: |
             pwd
+            ls -la
             ls ~
+            ls /home/circleci
             cat ~/output.txt
     
 workflows:

@@ -39,7 +39,7 @@ jobs:
           name: Save Hello World Output
           command: | 
             echo 'Hello World!' > output.txt
-      - persit_to_workspace:
+      - persist_to_workspace:
           root: /tmp/workspace
           paths:
             - myfile/output.txt

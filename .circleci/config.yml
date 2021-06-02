@@ -55,7 +55,7 @@ jobs:
           name: Print Output File
           command: |
             pwd
-            ls
+            ls ~
             cat ~/output.txt
     
 workflows:
